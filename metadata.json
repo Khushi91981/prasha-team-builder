@@ -1,0 +1,6 @@
+{
+  "name": "Prasha Infotech — Team Profile Builder",
+  "description": "Convert multiple individual developer resumes into consistent, premium, client-facing Prasha Infotech Developer Profiles with strict client confidentiality.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

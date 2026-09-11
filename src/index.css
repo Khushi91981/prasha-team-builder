@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #171817;
+    background-color: #FAF9F5;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Technical grid background pattern */
+.bg-tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(181, 138, 24, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(181, 138, 24, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.bg-tech-grid-dense {
+  background-image: 
+    linear-gradient(to right, rgba(23, 24, 23, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(23, 24, 23, 0.035) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Subtle gold foil accent borders */
+.border-gold-accent {
+  border-color: #B58A18;
+}
+
+.border-gold-subtle {
+  border-color: rgba(181, 138, 24, 0.25);
+}
+
+/* Print Specific Rules for True 2-Page Client Resume */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 8mm 8mm 8mm 8mm;
+  }
+
+  body {
+    background-color: #FFFFFF !important;
+    color: #171817 !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+    font-size: 9.5pt;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-page {
+    box-shadow: none !important;
+    margin: 0 0 0 0 !important;
+    padding: 24px 28px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    border: 1px solid #e5e0d8 !important;
+    background-color: #FFFFFF !important;
+    break-after: page;
+    page-break-after: always;
+  }
+
+  .print-page:last-of-type {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .print-page * {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

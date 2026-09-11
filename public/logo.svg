@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 120" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Gradient matching Prasha Infotech emblem -->
+    <linearGradient id="prashaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EED58A" />
+      <stop offset="35%" stop-color="#D9B14E" />
+      <stop offset="70%" stop-color="#C2942E" />
+      <stop offset="100%" stop-color="#9A701A" />
+    </linearGradient>
+    <linearGradient id="prashaGoldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FAF0C8" />
+      <stop offset="50%" stop-color="#DDB95B" />
+      <stop offset="100%" stop-color="#B28422" />
+    </linearGradient>
+    <linearGradient id="flameGrad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#C2942E" />
+      <stop offset="40%" stop-color="#E4BF64" />
+      <stop offset="80%" stop-color="#F7E6A9" />
+      <stop offset="100%" stop-color="#E2B750" />
+    </linearGradient>
+  </defs>
+
+  <!-- LEFT EMBLEM: Double concentric gold rings -->
+  <g transform="translate(60, 60)">
+    <!-- Outer Ring -->
+    <circle cx="0" cy="0" r="54" fill="none" stroke="url(#prashaGold)" stroke-width="2.5" />
+    <!-- Inner Ring -->
+    <circle cx="0" cy="0" r="47" fill="none" stroke="url(#prashaGold)" stroke-width="2" />
+
+    <!-- Stylized 'P' Monogram -->
+    <!-- Vertical stem of the P -->
+    <rect x="-24" y="-14" width="8" height="42" rx="1" fill="url(#prashaGold)" />
+    <!-- Bottom horizontal foot bar of P extending right -->
+    <path d="M-24 16 L2 16 Q8 16 12 11 L12 3 L-16 3 L-16 16 Z" fill="url(#prashaGold)" />
+    
+    <!-- Outer curve of the P loop -->
+    <path d="M-24 -14 L4 -14 C16 -14 24 -6 24 5 C24 16 16 23 4 23 L-16 23 L-16 15 L3 15 C10 15 15 11 15 5 C15 -1 10 -6 3 -6 L-24 -6 Z" fill="url(#prashaGoldLight)" />
+
+    <!-- Flame rising from top of P -->
+    <path d="M-8 -12 C-14 -22 -6 -32 0 -41 C3 -36 5 -32 3 -28 C7 -34 11 -37 14 -33 C18 -28 17 -22 13 -16 C16 -21 21 -21 21 -15 C21 -7 13 -2 2 -4 C-5 -5 -8 -8 -8 -12 Z" fill="url(#flameGrad)" />
+    <!-- Flame inner tongue -->
+    <path d="M-3 -14 C-7 -20 -2 -27 1 -32 C3 -28 4 -25 3 -22 C6 -26 9 -28 11 -25 C13 -21 11 -16 8 -13 C1 -13 -1 -13 -3 -14 Z" fill="#FFF8DC" opacity="0.8" />
+  </g>
+
+  <!-- RIGHT TEXT: PRASHA INFOTECH -->
+  <g transform="translate(142, 0)">
+    <!-- PRASHA -->
+    <text x="0" y="55" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="800" font-size="38" letter-spacing="4" fill="url(#prashaGold)">
+      PRASHA
+    </text>
+    <!-- INFOTECH -->
+    <text x="1" y="93" font-family="'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif" font-weight="700" font-size="33" letter-spacing="7" fill="url(#prashaGold)">
+      INFOTECH
+    </text>
+  </g>
+</svg>

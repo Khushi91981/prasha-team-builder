@@ -1,0 +1,16 @@
+{
+  "short_name": "Prasha Team",
+  "name": "PRASHA INFOTECH — Team Profile Builder",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512 any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#FAF9F5",
+  "theme_color": "#171817",
+  "display": "standalone",
+  "orientation": "portrait"
+}
